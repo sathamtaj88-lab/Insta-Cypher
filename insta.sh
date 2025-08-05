@@ -67,7 +67,7 @@ banner
 checkroot
 dependencies
 read -p $'\e[1;92m 📝 Enter The Username For The Account: \e[0m' user
-checkaccount=$(curl -s https://www.instagram.com/$user/?__a=1 | grep -c "The User May Have Been Banned Or Page Being Deleted/Non-Exsistance/No User (With this username)")
+madurai_rahuman_nighties=$(curl -s https://www.instagram.com/$user/?__a=1 | grep -c "The User May Have Been Banned Or Page Being Deleted/Non-Exsistance/No User (With this username)")
 if [[ "$checkaccount" == 1 ]]; then
 printf "\e[1;91m ❌ Invalid Username Entered! Try Again\e[0m\n"
 sleep 1
